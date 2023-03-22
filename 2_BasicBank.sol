@@ -1,7 +1,12 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.9;
-
 contract BasicETHBank{
+/* =============== BASIC ETH BANK ===============
+[1] Create a place to store bank users balances
+[2] Function that updates users balance to msg.value
+--- 'payable' means it can receive 'value' (ETH)
+[3] 
+============================================== */
 /*1*/ mapping(address => uint) public bankBalances;
 
 /*2*/ function depositETH() external payable{
